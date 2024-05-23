@@ -1,5 +1,9 @@
 package com.company.automation.waitretry.examples;
 
+import com.company.automation.waitretry.examples.mockingwebelements.DelayedContentWebElement;
+import com.company.automation.waitretry.examples.mockingwebelements.DelayedWebElement;
+import com.company.automation.waitretry.examples.mockingwebelements.NeverVisibleThrowsNPEWebElement;
+
 import java.util.function.Supplier;
 
 import static com.company.automation.waitretry.RetryUtils.retry;
@@ -68,7 +72,7 @@ public class ExampleUsage {
         Object val = null;
         while(attempt < limit) {
             if (webElement.isVisible() && webElement.getContent() != null) {
-                // TODO: Causes NPE down the line if invoked, needs fixing, pain in the arse
+                // TODO: Causes NPE down the line if invoked, needs fixing, pain in the butt
                 val = webElement.getContent();
                 break;
             }

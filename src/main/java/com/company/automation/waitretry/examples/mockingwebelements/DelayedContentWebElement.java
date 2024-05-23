@@ -1,4 +1,4 @@
-package com.company.automation.waitretry.examples;
+package com.company.automation.waitretry.examples.mockingwebelements;
 
 import static com.company.automation.waitretry.DelayUtils.delayedAction;
 

@@ -1,4 +1,4 @@
-package com.company.automation.waitretry.examples;
+package com.company.automation.waitretry.examples.mockingwebelements;
 
 /**
  * This web element mock never becomes visible therefore calling {@link NeverVisibleThrowsNPEWebElement#getContent()}

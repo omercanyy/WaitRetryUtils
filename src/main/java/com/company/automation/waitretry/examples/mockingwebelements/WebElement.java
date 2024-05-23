@@ -1,4 +1,4 @@
-package com.company.automation.waitretry.examples;
+package com.company.automation.waitretry.examples.mockingwebelements;
 
 /**
  * Mocks a simple Selenium Web Element that returns its content when visible.
@@ -11,11 +11,11 @@ public abstract class WebElement<T> {
     protected volatile boolean isVisible;
     protected volatile T content;
 
-    boolean isVisible() {
+    public boolean isVisible() {
         return isVisible;
     }
 
-    T getContent() {
+    public T getContent() {
         if (!isVisible) {
             throw new NullPointerException("getContent invoked on a null object");
         }
